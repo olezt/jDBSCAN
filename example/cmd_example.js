@@ -1,4 +1,4 @@
-require("./jDBSCAN.js");
+require("./../jDBSCAN.js");
 var point_data= [ 
             { 
                 location: {
