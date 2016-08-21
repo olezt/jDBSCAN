@@ -13,7 +13,9 @@
 
 ##Additional Features
 
- The algorithm also works on data points given by ***GPS coordinates***. Moreover, the algorithm can be used on data with a time dimension also. This allows for ***spatio-temporal*** clustering.   
+ The algorithm also works on data points given by ***GPS coordinates***. Moreover, the algorithm can be used on data with a time dimension also. This allows for ***spatio-temporal*** clustering. 
+ 
+ Also automated calculation of eps and minPts supported.
  
 ##Usage
 1. Import the script.
