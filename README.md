@@ -123,6 +123,12 @@ To run the algorithm you need to provide the data along with the **eps** and **m
 	// Configure a DBSCAN instance.
 	var dbscanner = jDBSCAN().eps(0.075).minPts(1).distance('EUCLIDEAN').data(point_data);
 ```
+For the automated calculation of **eps** or **minPts** or both of them, see bellow.
+Note: **Call .data(point_data) first** otherwise Eps, MinPts can't be estimated. 
+```javascript
+	// Configure a DBSCAN instance with automated Eps and MinPts.
+	var dbscanner = jDBSCAN().data(point_data).distance('HAVERSINE').autoMinPts().autoEps();
+```
 The distance functions available are: **'EUCLIDEAN', 'HAVERSINE'** (for GPS data), **'MANHATTAN'**.
 
 Additionally you can provide your own distance function, which must accept at least two parameters (the two points), and passing it to the *distance* method. The next step is to simply run the clustering algorithm.
