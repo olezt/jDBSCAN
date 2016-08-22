@@ -152,7 +152,6 @@
                     }
                     var eps = sum / neighbour.length;
                     eps=eps+10; //add 10 for better results
-                    console.log("jDBSCAN.js: Eps " + eps + " MinPts: " + minPts+" yo "+data.length +" "+neighbour.length);
                     return eps;
                 }
         
@@ -276,7 +275,6 @@ function set_neighbour(neighbour) {
                 
                 dbscan.autoMinPts = function () {
                     minPts = set_minpts();
-                    console.log(minPts);
                     return dbscan;
                 }
                 
